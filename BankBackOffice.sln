@@ -5,8 +5,6 @@ VisualStudioVersion = 17.12.35521.163
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankBackOffice", "BankBackOffice.csproj", "{F7AB05F4-EAF8-42FE-8A8B-F8647EFA0F01}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BackOfficeWeb", "BackOfficeWeb", "{DB144087-C46B-4C40-90D8-519540ACEC2B}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
