@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "3yOR5QrmlDPvNKP8qmZnXpnOdkVx7QfiC9/UxjdQPv8=",
+  "Source": "BankBackOffice",
+  "BasePath": "_content/BankBackOffice",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
