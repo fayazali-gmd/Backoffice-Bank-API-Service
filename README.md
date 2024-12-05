@@ -19,6 +19,49 @@ Ensure the following tools are installed on your machine:
 3. **Database**  
    If the service depends on a database, ensure it is set up and running.
 
+   Prerequisites
+.NET SDK 8.0
+Download and install .NET SDK 8.0
+
+SQL Server
+Install SQL Server and ensure it is running. You can use SQL Server Express for development.
+
+Git
+Download and install Git
+
+SQL Server Management Studio (SSMS) (Optional)
+Download SSMS
+
+CREATE DATABASE BankDB;
+GO
+USE BankDB;
+
+USE BankDB;
+
+CREATE TABLE Users (
+    UserId INT IDENTITY(1,1) PRIMARY KEY,
+    Username NVARCHAR(255) NOT NULL UNIQUE,
+    PasswordHash NVARCHAR(255) NOT NULL
+);
+
+CREATE TABLE Customers (
+    CustomerNumber INT PRIMARY KEY,
+    CustomerName NVARCHAR(255) NOT NULL,
+    DateOfBirth DATE NOT NULL,
+    Gender CHAR(1) NOT NULL CHECK (Gender IN ('M', 'F'))
+);
+
+-- Seed Users
+INSERT INTO Users (Username, PasswordHash)
+VALUES 
+('admin', '123'),
+('user1', '456');
+
+"ConnectionStrings": {
+  "DefaultConnection": "Server=YOUR_SERVER_NAME;Database=BankDB;Trusted_Connection=True;MultipleActiveResultSets=true"
+}
+
+
 ---
 
 ## Setup Instructions
